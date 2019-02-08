@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:entity-graph
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    generate-ddl: false
+#    show-sql: true
+    properties:
+      hibernate.generate_statistics: true
+    hibernate:
+      ddl-auto: create
